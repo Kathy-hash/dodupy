@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+
+            <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Cabin:400,400i|Fjalla+One|Noto+Sans&display=swap" rel="stylesheet"> 
+
+        <style>
+
+            div.main-div {
+                height: 37em;
+                display: flex;
+                align-items: center;
+                justify-content: center 
+                }
+
+            div.main-div h1 {
+                margin: 0 
+                }
+            
+            h1 {
+                font-size: 160px;
+                font-family: 'Fjalla One', sans-serif;
+                }
+
+        </style>
+
+    </head>
+
+    <body id = "body_id">
+        <div class = "main-div">
+            <h1 id = "answer">
+            </h1>
+
+        </div>
+
+        <script>
+            if (Math.random() > .5) {
+                x = 'TAK'
+                fontcolor = '#ffffff'
+                backcolor = '#000000'
+            } else {
+                x = 'NIE'
+                fontcolor = '#1afc05'
+                backcolor = '#ffffff'
+            }
+            document.getElementById("answer").innerHTML = x;
+            document.getElementById("answer").style.color = fontcolor;
+            document.getElementById("answer").style.backgroundColor = backcolor;
+            document.getElementById("body_id").style.backgroundColor = backcolor;
+        </script>
+
+    </body>
+</html>
